@@ -16,6 +16,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Render termina TLS no proxy; ativar apenas atras de proxy confiavel.
+        if (env('TRUST_PROXIES', false)) {
+            $middleware->trustProxies(at: '*');
+        }
+
         $middleware->alias([
             'active' => EnsureUserActive::class,
             'role' => EnsureUserRole::class,

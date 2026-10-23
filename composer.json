@@ -86,15 +86,5 @@
         "secure-http": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "name": "local",
-            "type": "composer",
-            "url": "file:///opt/tools/local-packagist"
-        },
-        {
-            "packagist.org": false
-        }
-    ]
+    "prefer-stable": true
 }

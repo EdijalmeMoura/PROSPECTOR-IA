@@ -177,3 +177,7 @@ interface informa que o conector/canal não está configurado.
   ausência de atualização de um estabelecimento não prova inatividade.
 - Do Google Places, apenas o `place_id` tem retenção permanente; o restante dos
   dados é transitório e expira conforme a política de retenção.
+
+## Deploy no Render
+
+Consulte [docs/RENDER.md](docs/RENDER.md) para Docker, variáveis, banco e primeiro acesso.

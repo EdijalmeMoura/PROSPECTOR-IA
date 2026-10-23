@@ -1,0 +1,6 @@
+.sidebar { width: 240px; min-height: 100vh; position: sticky; top: 0; }
+.sidebar .nav-link { border-radius: .5rem; margin-bottom: 2px; }
+.sidebar .nav-link.active { color: #fff !important; }
+.table-compact td, .table-compact th { vertical-align: middle; }
+.badge-score { min-width: 3rem; }
+@media (max-width: 767.98px) { .sidebar { display: none; } }

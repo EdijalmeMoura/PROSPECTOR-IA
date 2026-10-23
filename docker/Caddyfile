@@ -1,0 +1,13 @@
+# FrankenPHP/Caddy - Prospector IA
+# Ajuste o endereco (:8000) e o caminho root (pasta public/) no seu servidor.
+# Em producao, remova "auto_https off" e informe seu dominio para TLS automatico.
+{
+	auto_https off
+	admin off
+	frankenphp
+}
+
+:8000 {
+	root * /home/user/PROSPECTOR-IA/public
+	php_server
+}
